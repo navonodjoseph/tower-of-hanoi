@@ -1,0 +1,30 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: grid; 
+    text-align: center;
+    justify-content: center;
+    border: solid;  
+    border-radius: 1rem;
+    border-color: #000;
+
+}
+h1{
+    border-bottom: 1rem, solid;
+    border-color: #000;
+}
+.moves {
+    text-align: left; 
+    text-transform: uppercase;
+}
+
+.container{
+    display: flex; 
+    width: 700px; 
+    height: 50vh; 
+
+}
+footer{
+    display: inline-flex;
+    place-content: center;
+}
+
