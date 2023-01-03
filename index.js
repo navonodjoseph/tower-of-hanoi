@@ -38,6 +38,7 @@ const game = {
             this.children('.ring').eq(0).removeClass('hover'); 
         })
 
-    }
+    },
+    
 
 }

@@ -6,6 +6,7 @@ body{
     border: solid;  
     border-radius: 1rem;
     border-color: #000;
+    background: #ccc; 
 
 }
 h1{
@@ -41,9 +42,40 @@ footer{
 }
 
 .col+.col{
-    border-left: 10px dashed burlywood; 
+    border-left: 10px solid burlywood; 
 }
 
 .ring{
     height: 1.5rem;
+}
+
+.bounce{
+    animation-name: bounce; 
+    animation-iteration-count: infinate; 
+    animation-timing-function:cubic-bezier(1, 0, 0, 1); 
+    animation-duration: 800ms; 
+    animation-delay: 300ms; 
+}
+
+@keyframes bounce{
+    0%, 90% {transform: translate(0,-1rem)}
+    90%, 100% {transform: translate(0,0)}
+}
+
+.level-select{
+    color: white; 
+    margin: auto -20rem auto -20rem; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    transition: all 100ms ease;
+    font-size: 1.5rem; 
+
+}
+.level-select-box{
+    font-size: 2rem; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; 
 }
